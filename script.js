@@ -1,3 +1,4 @@
+// 以下ES5の場合のコード、ES6の場合はfunction()の部分をアロー関数、変数をletに変えれば大丈夫
 $(function() {
   // $('セレクタ').メソッド(引数);
   // hideメソッド：要素を隠す
@@ -29,4 +30,46 @@ $(function() {
   // CSSのdisplay: none;などで隠れた要素をアニメーション付きで表示する事ができる
   // 引数に速度'slow'「ゆっくり」に指定することができる
   // $('セレクタ').slideDown();
+
+  // イベント: $('セレクタ').イベント名(function(){ $('セレクタ').メソッド();});
+  // clickイベント：セレクタがクリックされた時に処理を行う
+  $('#hide-text').click(function() {
+    $('#h4-text').slideUp();
+  });
+
+  // CSSメソッド: CSSを変更・追加できるメソッド
+  // $('セレクタ').css('CSSのプロパティ名','値');
+  $('#change-css').click(function() {
+    $('#h5-text').css('color','red');
+    $('#h5-text').css('font-size','50px');
+  });
+
+  // HTMLの変更1 textメソッド: 文字列を変更することが出来る
+  // $('セレクタ').text('書き換える文字列');
+  $('#change-text').click(function() {
+    $('#h6-text').text('ようこそ、Progateへ');
+  });
+
+  // HTMLの変更2 htmlメソッド: 文字列の変更とhtmlを追加できるメソッド
+  // $('セレクタ').text('<追加するHTML>書き換える文字列</>'');
+  $('#change-html').click(function() {
+    $('#h6-text').html('<a href="https://prog-8.com/">ようこそ、Progateへ</a>');
+  });
+
+  // this: 複数の要素にイベントが設定されていた場合、クリックした対象のモノにだけイベントの処理を行う
+  // $(this).イベント名 ※thisに「''」で囲まない！
+  $('.list-item').click(function() {
+    $(this).css('color','red');
+  });
+
+  // 変数の使用: 同じセレクタを複数回使用する時は変数を使用する
+  // var $変数名 = $('複数用いるセレクタ名');
+  // メソッドチェーン: 1つのオブジェクトに連続してメソッドが利用できる構文 $('セレクタ').メソッド().メソッド()...
+  $('.h7-btn').click(function() {
+    // $('#title')を変数$titleに代入
+    var $title = $('#h7-title');
+        
+    // 「#title」に対する3つのメソッドを、変数を使って書き換えてください
+    $title.css('color', 'red').html('こんばんは、にんじゃわんこさん').fadeOut(1000);
+  });
 });
