@@ -32,7 +32,7 @@ $(function() {
   // $('セレクタ').slideDown();
 
   // イベント: $('セレクタ').イベント名(function(){ $('セレクタ').メソッド();});
-  // clickイベント：セレクタがクリックされた時に処理を行う
+  // clickイベント：セレクタがクリックされた時に処理を行うイベント
   $('#hide-text').click(function() {
     $('#h4-text').slideUp();
   });
@@ -51,13 +51,13 @@ $(function() {
   });
 
   // HTMLの変更2 htmlメソッド: 文字列の変更とhtmlを追加できるメソッド
-  // $('セレクタ').text('<追加するHTML>書き換える文字列</>'');
+  // $('セレクタ').html('<追加するHTML>書き換える文字列</>'');
   $('#change-html').click(function() {
     $('#h6-text').html('<a href="https://prog-8.com/">ようこそ、Progateへ</a>');
   });
 
   // this: 複数の要素にイベントが設定されていた場合、クリックした対象のモノにだけイベントの処理を行う
-  // $(this).イベント名 ※thisに「''」で囲まない！
+  // $(this).イベント名 ※thisは「''」で囲まない！
   $('.list-item').click(function() {
     $(this).css('color','red');
   });
@@ -70,6 +70,6 @@ $(function() {
     var $title = $('#h7-title');
         
     // 「#title」に対する3つのメソッドを、変数を使って書き換えてください
-    $title.css('color', 'red').html('こんばんは、にんじゃわんこさん').fadeOut(1000);
+    $title.css('color','red').html('こんばんは、にんじゃわんこさん').fadeOut(1000);
   });
 });
