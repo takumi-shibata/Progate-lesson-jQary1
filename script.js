@@ -24,10 +24,12 @@ $(function() {
   // showメソッド: CSSのdisplay: none;などで隠れた要素を表示する事ができる
   $('#sub-title').show();
   
+
   // fadeInメソッド: fadeOutメソッドの反対。徐々に表示させていくアニメーション
   // CSSのdisplay: none;などで隠れた要素をアニメーション付きで表示させる事もできる
   // 引数に速度'slow'「ゆっくり」に指定することができる
-  $('#image').fadeIn('slow'); 
+  $('#image').fadeIn('slow');
+  
 
   // slideDownメソッド: slideUpメソッドの反対。上から下へスライドするアニメーション
   // CSSのdisplay: none;などで隠れた要素をアニメーション付きで表示する事ができる
