@@ -82,4 +82,30 @@ $(function() {
     // メソッドチェーン
     $title.css('color','red').text('こんばんは').fadeOut(1000);
   });
+
+
+  // findメソッド: 親要素の中にある指定した全ての子要素を取得するメソッド
+  // $('親要素').find('子要素').メソッド()
+  $('#find-method').click(function() {
+    $('#wrapper').find('a').css('color','red');        
+  });
+
+
+  // childrenメソッド :親要素の一階層下の指定した子要素だけを取得するメソッド
+  // $('親要素').children('子要素').メソッド()
+  $('#children-method').click(function() {    
+    $('#wrapper').children('a').fadeOut();        
+  });
+
+
+  // hoverイベント: 要素にカーソルが乗った時、外れた時に指定した処理を行うイベント
+  // ※clickイベントと違い、functionを(乗った時、外れた時)2つ書くことに注意! 各functionの間にはコンマ「,」が必要！
+  $('#language-wrapper').hover(
+    function() {
+      $('.language-text').fadeIn();
+    },
+    function() {
+      $('.language-text').fadeOut();  
+    }
+  );
 });
