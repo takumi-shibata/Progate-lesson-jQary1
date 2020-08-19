@@ -6,3 +6,59 @@ h3 {
 li {
   cursor: pointer;
 }
+
+.btn {
+  width: 5%;
+  display: block;
+  cursor: pointer;
+  padding: 12px 80px;
+  background-color: #5dca88;
+  box-shadow: 0px 5px #279C56;
+  border-radius: 3px;
+  color: #fff;
+  font-size: 12px;
+  margin-bottom: 20px;
+}
+
+.btn:active {
+  position: relative;
+  top: 5px;
+  box-shadow: none;
+}
+
+.h6-btn{
+  display: inline-block;
+  cursor: pointer;
+  padding: 12px 80px;
+  background-color: #5dca88;
+  box-shadow: 0px 5px #279C56;
+  border-radius: 3px;
+  color: #fff;
+  font-size: 12px;
+  margin-bottom: 20px;
+}
+
+.h6-btn:active{
+  position: relative;
+  top: 5px;
+  box-shadow: none;
+}
+
+.h7-btn {
+  width: 100px;
+  display: block;
+  cursor: pointer;
+  padding: 12px 80px;
+  background-color: #5dca88;
+  box-shadow: 0px 5px #279C56;
+  border-radius: 3px;
+  color: #fff;
+  font-size: 12px;
+  margin-bottom: 20px;
+}
+
+.h7-btn:active {
+  position: relative;
+  top: 5px;
+  box-shadow: none;
+}
