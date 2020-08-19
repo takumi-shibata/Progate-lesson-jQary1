@@ -62,3 +62,7 @@ li {
   top: 5px;
   box-shadow: none;
 }
+
+.language-text {
+  display: none;
+}
