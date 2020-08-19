@@ -1,0 +1,8 @@
+h3 {
+  /* display: none;で要素の非表示、display: block;で要素の表示 */
+  display: none;
+}
+
+li {
+  cursor: pointer;
+}
